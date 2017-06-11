@@ -32,7 +32,7 @@ namespace CXC.ClaimXO.Android
             Log.Debug(Tag, "Performing some startup work that takes a bit of time.");
             await Task.Delay(2000); // Simulate a bit of startup work.
             Log.Debug(Tag, "Startup work is finished - starting MainActivity.");
-            StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+            StartActivity(new Intent(Application.Context, typeof(LoginActivity)));
         }
     }
 }
